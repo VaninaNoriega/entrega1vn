@@ -1,92 +1,68 @@
 body{
-    background-color:#f8ecd5;
     width: 100%;
+    height: 100%;
 }
-h1{
-    font-family:Impact,'Arial Narrow Bold';
-    padding: 0px ;
-    text-decoration: solid;
-}
-p{
-    padding-top: 0px;
-    font-size: x-large;
-    font-family: impact;
-    text-align:right;
-}
-.Logo img{
-    padding: 0px;
+.principal{
+    background-image: url(../asset/DividirAmbientes.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height:100vh;
 }
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-nav ul a{
-    float:right;
-    width: 132px;
-    text-decoration: none;
+.Texto-imp{
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.966);
+    padding-top: 23%;
     text-align: center;
-    color: white;
-    background: hsl(0, 13%, 8%);
-    padding: 10px 100px;
-    border-right:1px solid #6395c7;
-    display: block;
-}
-nav ul li{
-    float:left
-}
-nav ul a:hover{
-    background-color: rgb(175, 175, 165);
-}
-.Beneficios p{
-    padding: 10px;
-    font-family:Verdana;
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
 }
 
-.box section img{
-    padding: 30px;
-    width: 600px;
-    height: 300px;
-    }
+.Texto{
+    font-size: medium;
+    text-align: center;
+    color:rgba(19, 17, 17, 0.821);
     
-.content-box{
-    font-family:"Roboto", sans-serif;;
-    font-style: normal;
 }
-.caja{
-    width: 100%;
-    height: 80%;
-    background: linear-gradient(to top, hsl(93, 89%, 67%), #fbfb52);
-    border-radius: 7px;
-    margin-top: 20px;
+.tarjetas{
+    background-color: rgba(105, 97, 97, 0.169);
+    margin-top: 8%;
+    margin-bottom: 10%;
 }
-.caja p{
+.card-title, .card-text{
     text-align: center;
-    text-decoration:none;
-    font-size:larger;
-    height: 10px;
-    padding-top: 2%;
 }
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content:space-between;
+    color: rgba(0, 0, 0, 0.91);
+}
+.subtitulo h3{
+    margin-top: 2%;
+    font-size: 20px;
+}
+
 
 /*Servicios*/
 body.Servicios{
-    background-image: url(/entrega1vn/asset/FondoServicios.jpg);
+    background-image: url(../asset/NuevoFondoSer.jpg);
     width: 100%;
 }
-.Servicios h1{
-    font-family: "Poppins", sans-serif;
-    color: #303018;
-    text-align: left;
+a{
+    text-decoration: none;
 }
-.Servicios h2{
+main{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+h2{
     font-family: "Poppins", sans-serif;
     text-align: right;
+    color: rgba(0, 0, 0, 0.871);
     margin-right: 5%;
+
 }
 .Techos, .Pared, .Muebles{
     margin: 5%;
@@ -106,41 +82,53 @@ body.Servicios{
     }
 .Muebles{
     width: 300px;
-}
+    }
 .Techos li, .Muebles li{
     font-family: Arial, Helvetica, sans-serif;
 }
-.Pared p{
+.textoPared{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding-top: 0;
 }
 .box1{
-    margin: 5%;
-    padding: 1%;
-    float: left;
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
     width: 90%;
-    height: 50%;
-    background-color: #050505;
+    margin: 2% 3%;
+    background-color: rgba(0, 0, 0, 0.775);
+    border: 0.5rem solid rgba(0, 0, 0, 0.855);
 }
 .box1 img{
-    width: 235px;
-    height: 250px;
-    padding: 0,9%; 
+    border: 1px solid azure;
+    border-radius: 1%;
+    margin: 0 3%;
+    width: 90%;
+    height: 100%;
 }
 
+
 /*Nosotros*/
-body.Nosotros2{
-    background-image: url(/entrega1vn/asset/Fondo.Nosotros.jpg);
+.Nosotros1{
+    background-color: rgba(219, 219, 28, 0.243);
     width: 100%;
 }
-.Foto{
+.Nosotros1 h1{
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.967);
+}
+
+a{
+    text-decoration: none;
+}
+.Foto img{
     width: 100%;
     height: 30%;
 }
-.Nosotros2 h1{
-    font-family: "Poppins", sans-serif;
-    text-align: left;
-}
+
 p.Nosotros2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 10%;
@@ -151,7 +139,8 @@ p.Nosotros2{
     padding: 0;
     float: left;
     }
-.Nos2 h2 .Diferencia h2{
+.Nos2 h2 , .Diferencia h2{
+    color: rgba(0, 0, 0, 0.935);
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 0%;
@@ -175,53 +164,25 @@ p.Conta{
 
 
 /*Preguntas frecuentes*/
-body.Pre-frec{
-    background-image: url(/entrega1vn/asset/Fondopf.jpg);
+.Pre-frec{
+    background-color: rgba(244, 219, 187, 0.767);
     width: 100%;
 }
-.Pre-frec h1{
+h1{
+    font-size: x-large;
     font-family: "Poppins", sans-serif;
     color: black;
     text-align: center
 }
-#preguntas-frecuentes h2{
-    text-align: center;
-    font-family:"Pacifico", cursive;
-}
-#preguntas-frecuentes p{
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 5%;
-}
-#preguntas-frecuentes li{
-    font-family:"Pacifico", cursive;
-    font-size:x-large;
-    font-style: italic;
-}
-#preguntas-frecuentes p{
-    font-family:"Pacifico", cursive;
-    font-size: large;
-    font-style: italic;
-}
-.form img{
-    width: 40%;
-    height: 20%;
-    border-style: double;
-    margin-left: 30%;
-    margin-top: 0%;
-}
-.form p{
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: small;
-}
+
 
 /*Contacto*/
-body.contacto{
-    background-color: hsl(58, 89%, 69%);
+.contacto{
+    background-color: hsla(58, 89%, 69%, 0.733);
 }
-
+.contacto-main{
+    position: relative;
+}
 .contacto h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
@@ -261,4 +222,5 @@ iframe{
     margin-top: 0%;
     margin-left: 65%;
 }
-/** tengo que incluir bootst y todos los demas cambios pero primero queria corregir lo de las rutas**/
+
+
