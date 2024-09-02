@@ -1,7 +1,7 @@
-.Encab-serv, .Texto-imp p, .Texto-imp h1 {
+.h1contacto, .titulo-nos, .Encab-serv, .principal p, .principal h1 {
   font-size: 2, 5rem;
+  font-style: solid;
   color: rgba(0, 0, 0, 0.961);
-  padding-top: 23%;
   text-align: center;
 }
 
@@ -13,6 +13,13 @@
   height: 100vh;
 }
 
+.principal h1 {
+  padding-top: 15%;
+}
+.principal p {
+  padding-top: 30%;
+}
+
 .tarjetas {
   background-color: rgba(105, 97, 97, 0.169);
   margin-top: 8%;
@@ -21,6 +28,8 @@
 
 .card-title, .card-text {
   text-align: center;
+  font-size: 1rem;
+  font-style: solid;
 }
 
 .pie-pagina {
@@ -70,7 +79,7 @@ main {
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   text-align: center;
   color: rgba(0, 0, 0, 0.871);
   font-size: medium;
@@ -84,7 +93,7 @@ h2 {
 
 .Techos h2, .Pared h2, .Muebles h2 {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 .Techos {
@@ -100,11 +109,11 @@ h2 {
 }
 
 .Techos li, .Muebles li {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
 .textoPared {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: medium;
   color: rgb(0, 0, 0);
   padding-top: 0;
@@ -129,5 +138,95 @@ h2 {
 }
 
 /*Nosotros*/
+.Nosotros1 {
+  background-color: rgba(244, 219, 187, 0.767);
+  width: 100%;
+}
+
+.titulo-nos {
+  padding-top: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Foto img {
+  width: 100%;
+  height: 30%;
+}
+
+p.Nosotros2 {
+  font-family: Arial;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 3%;
+}
+
+.Nos2, .Diferencia {
+  margin: 5%;
+  padding: 0;
+  float: left;
+}
+
+.Nos2 {
+  width: 700px;
+}
+
+.Diferencia {
+  width: 300px;
+}
+
+.Nos2 p, .Diferencia li {
+  font-size: medium;
+  font-family: Arial;
+}
+
+p.Conta {
+  margin-right: 40%;
+  font-size: large;
+  font-family: Arial;
+}
+
+/*Preguntas frecuentes*/
+.Pre-frec {
+  background-color: rgba(244, 219, 187, 0.767);
+  width: 100%;
+}
+
+/*Contacto*/
+.contacto {
+  background-color: rgba(244, 219, 187, 0.767);
+  width: auto;
+}
+
+.Contac p {
+  font-size: 5%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.Contac img {
+  width: 30%;
+  height: 20%;
+  padding: 4%;
+}
+
+.card-contacto {
+  width: 100%;
+  display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .card-contacto {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .card-contacto {
+    justify-content: center;
+    gap: 3%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

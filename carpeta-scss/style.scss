@@ -1,5 +1,6 @@
 @import "./base/variables";
 @import "./utilities/extens";
+@import "./layout/mixin";
 
 
 .principal{
@@ -10,12 +11,14 @@
     height: 100vh;
 }
 
-.Texto-imp{
+.principal{
     h1{
         @extend %textoHeader;
+        padding-top: 15%
     }
     p{
         @extend %textoHeader;
+        padding-top: 30%;
     }
 }
 
@@ -27,6 +30,8 @@
 
 .card-title, .card-text{
     text-align: center;
+    font-size: 1rem;
+    font-style: solid;
 }
 
 .pie-pagina{
@@ -55,13 +60,14 @@
     .pie-pagina{
         flex-wrap: nowrap;
     }
+
 }
 
 /*Servicios*/
 
 body.Servicios{
     background-color: rgba(219, 219, 28, 0.243);
-    width: 100%;
+    @include wid-gral(100%);
 }
 a{
     text-decoration: none;
@@ -75,7 +81,7 @@ main{
     padding-top: 5%;
 }
 h2{
-    font-family: "Poppins",sans-serif;
+    font-family: nth($fuentes,1);
     text-align: center;
     color: rgba(0, 0, 0, 0.871);
     font-size: medium;
@@ -87,22 +93,22 @@ h2{
 }
 .Techos h2, .Pared h2, .Muebles h2{
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: nth($fuentes,2);
 }
 .Techos{
-    width: 300px;
+    @include wid-gral(300px);
 }
 .Pared{
-    width: 300px;
+    @include wid-gral(300px);
 }
 .Muebles{
-    width: 300px;
+    @include wid-gral(300px);
 }
 .Techos li, .Muebles li{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: nth($fuentes,2);
 }
 .textoPared{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: nth($fuentes,2);
     font-size: medium;
     color: rgba(0,0,0);
     padding-top: 0;
@@ -128,17 +134,11 @@ h2{
 
 .Nosotros1{
     background-color: rgba(244, 219, 187, 0.767);
-    width: 100%;
+    @include wid-gral(100%);
 }
 .titulo-nos{
     @extend %textoHeader;
-    padding-top: 25%;
-
-    @media only screen and (min-width: 600px){
-        .titulo-nos{
-            padding-top: 6%;
-        }
-    }
+    padding-top: 5%;
 }
 
 a{
@@ -151,7 +151,7 @@ a{
 }
 
 p.Nosotros2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: nth($fuentes,3);
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 3%;
@@ -164,20 +164,69 @@ p.Nosotros2{
 }
 
 .Nos2{
-    width: 700px;
+    @include wid-gral(700px);
 }
 .Diferencia{
-    width: 300px;
+    @include wid-gral(300px);
 }
 
 .Nos2 p, .Diferencia li{
     font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: nth($fuentes,3);
 }
 
 p.Conta{
     margin-right: 40%;
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: nth($fuentes,3);
 }
 
+/*Preguntas frecuentes*/
+.Pre-frec{
+    background-color:rgba(244, 219, 187, 0.767);
+    @include wid-gral(100%);
+}
+
+.titulo-nos{
+    @extend %textoHeader;
+}
+
+/*Contacto*/
+.contacto{
+    background-color: rgba(244, 219, 187, 0.767);
+    width: auto;
+}
+
+.h1contacto{
+    @extend %textoHeader;
+}
+
+.Contac p{
+    font-size: 5%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.Contac img{
+    width: 30%;
+    height: 20%;
+    padding: 4%;
+}
+
+.card-contacto{
+    width: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width: 500px){
+    .card-contacto{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .card-contacto{
+        justify-content: center;
+        gap: 3%;
+    }
+}
