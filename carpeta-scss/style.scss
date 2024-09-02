@@ -1,6 +1,7 @@
 @import "./base/variables";
 @import "./utilities/extens";
 
+
 .principal{
     background-image: url(../asset/DividirAmbientes.jpg);
     background-size: cover;
@@ -11,10 +12,10 @@
 
 .Texto-imp{
     h1{
-        @extend %textoHeaderI;
+        @extend %textoHeader;
     }
     p{
-        @extend %textoHeaderI;
+        @extend %textoHeader;
     }
 }
 
@@ -35,19 +36,19 @@
     justify-content: center;
     gap: 5%;
     flex-wrap: wrap;
+}
 
-        .subtitulo{
-            margin-top: 2%;
-            font-size: 20px;
-            text-align: center;
-            color: rgba(11, 11, 11, 0.97);
-        }
+.subtitulo{
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(11, 11, 11, 0.97);
+}
 
-        .Texto{
-            font-size: medium;
-            text-align: center;
-            color: rgba(19, 17, 17, 0.821);
-        }
+.Texto{
+    font-size: medium;
+    text-align: center;
+    color: rgba(19, 17, 17, 0.821);
 }
 
 @media only screen and (min-width: 601px){
@@ -55,3 +56,128 @@
         flex-wrap: nowrap;
     }
 }
+
+/*Servicios*/
+
+body.Servicios{
+    background-color: rgba(219, 219, 28, 0.243);
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.Encab-serv{
+    @extend %textoHeader;
+    padding-top: 5%;
+}
+h2{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.871);
+    font-size: medium;
+}
+.Techos, .Pared, .Muebles{
+    margin: 5%;
+    padding: 0;
+    float: left;
+}
+.Techos h2, .Pared h2, .Muebles h2{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Techos{
+    width: 300px;
+}
+.Pared{
+    width: 300px;
+}
+.Muebles{
+    width: 300px;
+}
+.Techos li, .Muebles li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textoPared{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: rgba(0,0,0);
+    padding-top: 0;
+}
+.box1{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 90%;
+    margin: 2% 3%;
+    background-color: rgba(0,0,0,0.775);
+    border: 0.5rem solid rgba(0, 0, 0, 0.855);
+}
+.box1 img{
+    border: 1px solid azure;
+    border-radius: 1%;
+    margin: 0,3%;
+    width: 90%;
+    height: 100%;
+}
+
+/*Nosotros*/
+
+.Nosotros1{
+    background-color: rgba(244, 219, 187, 0.767);
+    width: 100%;
+}
+.titulo-nos{
+    @extend %textoHeader;
+    padding-top: 25%;
+
+    @media only screen and (min-width: 600px){
+        .titulo-nos{
+            padding-top: 6%;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.Foto img{
+    width: 100%;
+    height: 30%;
+}
+
+p.Nosotros2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 3%;
+}
+
+.Nos2, .Diferencia{
+    margin: 5%;
+    padding: 0;
+    float: left;
+}
+
+.Nos2{
+    width: 700px;
+}
+.Diferencia{
+    width: 300px;
+}
+
+.Nos2 p, .Diferencia li{
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p.Conta{
+    margin-right: 40%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

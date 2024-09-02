@@ -1,5 +1,5 @@
-.principal .Texto-imp p, .principal .Texto-imp h1 {
-  font-size: 1, 5rem;
+.Encab-serv, .Texto-imp p, .Texto-imp h1 {
+  font-size: 2, 5rem;
   color: rgba(0, 0, 0, 0.961);
   padding-top: 23%;
   text-align: center;
@@ -12,6 +12,7 @@
   width: 100%;
   height: 100vh;
 }
+
 .tarjetas {
   background-color: rgba(105, 97, 97, 0.169);
   margin-top: 8%;
@@ -30,13 +31,15 @@
   gap: 5%;
   flex-wrap: wrap;
 }
-.pie-pagina .subtitulo {
+
+.subtitulo {
   margin-top: 2%;
   font-size: 20px;
   text-align: center;
   color: rgba(11, 11, 11, 0.97);
 }
-.pie-pagina .Texto {
+
+.Texto {
   font-size: medium;
   text-align: center;
   color: rgba(19, 17, 17, 0.821);
@@ -47,5 +50,84 @@
     flex-wrap: nowrap;
   }
 }
+/*Servicios*/
+body.Servicios {
+  background-color: rgba(219, 219, 28, 0.243);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.Encab-serv {
+  padding-top: 5%;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.871);
+  font-size: medium;
+}
+
+.Techos, .Pared, .Muebles {
+  margin: 5%;
+  padding: 0;
+  float: left;
+}
+
+.Techos h2, .Pared h2, .Muebles h2 {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Techos {
+  width: 300px;
+}
+
+.Pared {
+  width: 300px;
+}
+
+.Muebles {
+  width: 300px;
+}
+
+.Techos li, .Muebles li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoPared {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: rgb(0, 0, 0);
+  padding-top: 0;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 90%;
+  margin: 2% 3%;
+  background-color: rgba(0, 0, 0, 0.775);
+  border: 0.5rem solid rgba(0, 0, 0, 0.855);
+}
+
+.box1 img {
+  border: 1px solid azure;
+  border-radius: 1%;
+  margin: 0, 3%;
+  width: 90%;
+  height: 100%;
+}
+
+/*Nosotros*/
 
 /*# sourceMappingURL=style.css.map */
