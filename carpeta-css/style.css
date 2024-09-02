@@ -1,238 +1,51 @@
-
-.principal{
-    background-image: url(../asset/DividirAmbientes.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height:100vh;
-}
-.Texto-imp{
-    font-size: 1,5rem;
-    color:rgba(0, 0, 0, 0.966);
-    padding-top: 23%;
-    text-align: center;
+.principal .Texto-imp p, .principal .Texto-imp h1 {
+  font-size: 1, 5rem;
+  color: rgba(0, 0, 0, 0.961);
+  padding-top: 23%;
+  text-align: center;
 }
 
-.Texto{
-    font-size: medium;
-    text-align: center;
-    color:rgba(19, 17, 17, 0.821);
-    
+.principal {
+  background-image: url(../asset/DividirAmbientes.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
-.tarjetas{
-    background-color: rgba(105, 97, 97, 0.169);
-    margin-top: 8%;
-    margin-bottom: 10%;
-}
-.card-title, .card-text{
-    text-align: center;
+.tarjetas {
+  background-color: rgba(105, 97, 97, 0.169);
+  margin-top: 8%;
+  margin-bottom: 10%;
 }
 
-.pie-pagina{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
-    display: flex;
-    justify-content:center;
-    gap: 5%;
-    flex-wrap: wrap;
-}
-.subtitulo{
-    margin-top: 2%;
-    font-size: 20px;
-    text-align: center;
-    color: rgba(11, 11, 11, 0.97);
-}
-@media only screen and (min-width: 601px){
-    .pie-pagina{
-        flex-wrap: nowrap;
-    }
+.card-title, .card-text {
+  text-align: center;
 }
 
-
-/*Servicios*/
-body.Servicios{
-    background-image: url(../asset/NuevoFondoSer.jpg);
-    width: 100%;
+.pie-pagina {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.404);
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
 }
-a{
-    text-decoration: none;
+.pie-pagina .subtitulo {
+  margin-top: 2%;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(11, 11, 11, 0.97);
 }
-main{
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
-.Encab-serv{
-    font-size: x-large;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    text-align: center;
-    margin-top: 5%;
-}
-
-h2{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.871);
-    font-size: medium;
-
-}
-.Techos, .Pared, .Muebles{
-    margin: 5%;
-    padding: 0;
-    float: left;
-    }
-.Techos h2, .Pared h2, .Muebles h2{
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Techos{
-    width: 300px;
-    }
-.Pared{
-    width: 300px;
-    }
-.Muebles{
-    width: 300px;
-    }
-.Techos li, .Muebles li{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.textoPared{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    color: rgb(0, 0, 0);
-    padding-top: 0;
-}
-.box1{
-    display:flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 90%;
-    margin: 2% 3%;
-    background-color: rgba(0, 0, 0, 0.775);
-    border: 0.5rem solid rgba(0, 0, 0, 0.855);
-}
-.box1 img{
-    border: 1px solid azure;
-    border-radius: 1%;
-    margin: 0 3%;
-    width: 90%;
-    height: 100%;
+.pie-pagina .Texto {
+  font-size: medium;
+  text-align: center;
+  color: rgba(19, 17, 17, 0.821);
 }
 
-
-/*Nosotros*/
-.Nosotros1{
-    background-color: rgba(219, 219, 28, 0.243);
-    width: 100%;
-}
-a{
-    text-decoration: none;
-}
-.titulo-nos{
-    padding-top:25%;
-    font-size: x-large;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    text-align: center
-}
-@media only screen and (min-width: 600px){
-    .titulo-nos{
-        padding-top:6%;
-    }
-}
-.Foto img{
-    width: 100%;
-    height: 30%;
+@media only screen and (min-width: 601px) {
+  .pie-pagina {
+    flex-wrap: nowrap;
+  }
 }
 
-p.Nosotros2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 3%;
-}
-.Nos2, .Diferencia{
-    margin: 5%;
-    padding: 0;
-    float: left;
-    }
-
-.Nos2{
-    width: 700px;
-    }
-.Diferencia{
-    width: 300px;
-    }
-.Nos2 p, .Diferencia li{
-    font-size: medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-p.Conta{
-    margin-right: 40%;
-    font-size:large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-/*Preguntas frecuentes*/
-.Pre-frec{
-    background-color: rgba(244, 219, 187, 0.767);
-    width: 100%;
-}
-h1{
-    font-size: x-large;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    text-align: center
-}
-
-
-/*Contacto*/
-.contacto{
-    background-color: hsla(58, 89%, 69%, 0.733);
-    width: auto;
-}
-
-.h1Contacto{
-    font-size: x-large;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    text-align: center;
-    padding-top: 6%;
-}
-
-.Contac img{
-    width: 30%;
-    height: 20%;
-    padding: 4%;
-}
-.ContacP{
-    font-size: 5%;
-    text-align: center;
-    margin-top: 3%;
-}
-
-.card-contacto{
-    width: 100%;
-    display: flex;
-}
-
-@media only screen and (max-width: 500px){
-    .card-contacto{
-        flex-wrap: wrap;
-    }
-    .h1Contacto{
-        margin-top: 15%;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    .card-contacto{
-    justify-content: center;
-    gap: 3%
-    }
-}
-
-
+/*# sourceMappingURL=style.css.map */
