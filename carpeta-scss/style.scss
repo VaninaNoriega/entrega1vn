@@ -197,11 +197,12 @@ p.Conta{
     width: auto;
 }
 
-.h1contacto{
+.h1Contacto{
     @extend %textoHeader;
+    padding-top: 15%;
 }
 
-.Contac p{
+.Texto p{
     font-size: 5%;
     text-align: center;
     margin-top: 3%;
