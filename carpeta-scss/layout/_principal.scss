@@ -1,0 +1,12 @@
+.principal{
+    background-image: url(../asset/DividirAmbientes.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 20%;
+    filter: brightness(0.8);
+
+        .texto-imp{
+            @extend %textoHeader;
+        }
+}

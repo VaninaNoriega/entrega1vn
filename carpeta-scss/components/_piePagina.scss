@@ -1,0 +1,27 @@
+.pie-pagina{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    .contenedor-redes-footer{
+        width: min-content;
+        margin: 0 4%;
+        .contenedor-logos-redes{
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    .contenedor-nosotros-footer{
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex; flex-direction: column;
+        }
+    }
+}
