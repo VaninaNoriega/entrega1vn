@@ -1,0 +1,27 @@
+/*Contacto*/
+.contacto{
+    background-color: rgba(244, 219, 187, 0.767);
+    width: auto;
+}
+
+.h1Contacto{
+    @extend %textoHeader;
+    padding-top: 15%;
+}
+
+.Texto p{
+    font-size: 5%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.Contac img{
+    width: 30%;
+    height: 20%;
+    padding: 4%;
+}
+
+.card-contacto{
+    width: 100%;
+    display: flex;
+}
