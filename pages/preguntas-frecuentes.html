@@ -11,10 +11,9 @@
 <body class="Pre-frec">
     <header>
         <a href="../index.html">Durlock</a>
-        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-                <img src="../asset/Dur-secLogo.png" alt="Bootstrap" width="80" height="60">
-                <a class="navbar-brand" href="#">Menu</a>
+                <a class="navbar-brand" href="#"><img src="../asset/Dur-secLogo.png" alt="Bootstrap" width="80" height="60"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,56 +82,49 @@
             </ul>
         </div>
     </main>
-    <footer>
-        <img src="../asset/preg-frec2.jpg" width="100%" height="15%" alt="ImgFooter">
-        <div class="pie-pagina">
-            <div>
-                <h3 class="sub-titulo">Sobre Nosotros</h3>
-                <ul>
-                    <li>
-                        <p class="Texto">Somos especialistas en la instalacion de material en seco</p>
-                    </li>
-                    <li>
-                        <p class="Texto">Servicio integral que abarca desde techos y paredes hasta la fabricacion de muebles a medida. </p>
-                    </li>
-                    <li>
-                        <p class="Texto">Apostamos al emprendimiento responsable y de calidad.</p>
-                    </li>
+    <footer class="py-5 container-fluid bg-dark" data-bs-theme="dark">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="text-white">Sobre Nosotros</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 text-white">Somos especialistas en la instalacion de material en seco</li>
+                    <li class="nav-item mb-2 text-white">Servicio integral que abarca desde techos y paredes hasta la fabricacion de muebles a medida.</li>
+                    <li class="nav-item mb-2 text-white">Apostamos al emprendimiento responsable y de calidad.</li> 
                 </ul>
             </div>
-            <div>
-                <h3 class="sub-titulo">Medios de pago</h3>
-                <p class="Texto">Efectivo</p>
-                <p class="Texto">Tarjetas de debito/credito</p>
-                <p class="Texto">Transferencias</p>
+    
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="text-white" >Medios de pago</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><p class="text-white">Efectivo</p></li>
+                    <li class="nav-item mb-2"><p class="text-white">Tarjetas de Debito/Credito</p></li>
+                    <li class="nav-item mb-2"><p class="text-white">Transferencias</p></li>
+                </ul>
             </div>
-            <div>
-                <h3 class="sub-titulo">Contactanos</h3>
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25377.png" width="4%" alt="tel">
-                <p class="Texto">Tel: 385-5000000</p>
-                <img src="https://static.vecteezy.com/system/resources/previews/009/759/632/non_2x/eps10-white-location-map-icon-isolated-on-black-background-pinpoint-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-pictogram-and-mobile-application-vector.jpg" width="4%" alt="tel">
-                <p class="Texto" >Dir:Avellaneda e Independencia</p>
-                <img src="https://thumbs.dreamstime.com/b/icono-de-l%C3%ADnea-correo-electr%C3%B3nico-en-fondo-negro-ilustraci%C3%B3n-vectores-estilo-plano-168421123.jpg" width="4%" alt="tel">
-                <p class="Texto">Mail: Dursec@gmail.com</p>
-            </div> 
-            <div>
-                <h3 class="sub-titulo">Presupuestos o Consultas</h3>
+    
+            <div class="col-6 col-md-2 mb-3">
+                <h5 class="text-white">Contactanos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><p class="text-white">Tel: 385-5000000</p></li>   
+                    <li class="nav-item mb-2"><p class="text-white">Dir: Avellaneda e Independencia</p></li>
+                    <li class="nav-item mb-2"><p class="text-white">Mail: DurSec@gmail.com</p></li> 
+                </ul>
+            </div>
+            
+            <div class="col-md-5 offset-md-1 mb-3">
                 <form>
-                    <p>
-                        <label>Apellido y Nombre</label> 
-                        <input type="text">
-                    </p>
-                    <p>
-                        <label>Correo electronico</label>
-                        <input type="email">
-                    </p>
-                    <p>
-                        <label class="a">Dejanos tu Consulta</label>
-                        <textarea rows="2" cols="25"></textarea>
-                    </p>
-                    <p> <input type="submit"></p>
+                    <h5 class="text-white">Subscribe a nuestro newsletter</h5>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
                 </form>
             </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p class="text-white">© 2024 Company, Inc. Todos los derechos reservados.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
