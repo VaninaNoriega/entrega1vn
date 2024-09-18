@@ -1,20 +1,22 @@
 .contacto{
-    background-color: rgba(244, 219, 187, 0.767);
+    background-color: rgba(216, 211, 216, 0.767);
     width: auto;
 }
 .h1Contacto{
     @extend %textoHeader;
-    padding-top: 25%;
+    padding-top: 8%;
 }
 .Texto p{
-    font-size: 10%;
+    font-size: 15%;
+    font-style: solid;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .Contac img{
     width: 30%;
-    height: 20%;
-    padding: 4%;
+    height: 45%;
+    padding: 2%;
+    margin-top: 5%;
 }
 .card-contacto{
     width: 100%;
