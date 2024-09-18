@@ -1,0 +1,44 @@
+@media only screen and (max-width:500px){
+    .card-contacto{
+        flex-wrap: wrap;
+    }
+    .principal{
+        padding-top: 15vh;
+    }
+    .pie-pagina{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+            .contenedor-redes-footer{
+                width: min-content;
+                margin: 0 4%;
+                text-align: center;
+            
+            .contenedor-logos-redes{
+                flex-direction: column;
+                align-items: center;
+            }
+            }
+    .contenedor-nosotros-footer{
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex; flex-direction: column;
+        }
+    }        
+    }
+}
+
+@media only screen and (min-width:600px){
+    .card-contacto{
+        justify-content: center;
+        gap: 3%;
+    }
+}
+
+//@media only screen and (min-width: 601px){
+//       .pie-pagina{
+//           flex-wrap: nowrap;
+//       }
+//   }
