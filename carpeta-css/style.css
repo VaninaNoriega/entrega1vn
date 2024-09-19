@@ -216,27 +216,8 @@ p.Conta {
   .principal {
     padding-top: 15vh;
   }
-  .pie-pagina {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .pie-pagina .contenedor-redes-footer {
-    width: min-content;
-    margin: 0 4%;
-    text-align: center;
-  }
-  .pie-pagina .contenedor-redes-footer .contenedor-logos-redes {
-    flex-direction: column;
-    align-items: center;
-  }
-  .pie-pagina .contenedor-nosotros-footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .pie-pagina .contenedor-nosotros-footer ul {
-    display: flex;
-    flex-direction: column;
+  .h1Contacto, .titulo-nos, .Encab-serv {
+    padding-top: 15vh;
   }
 }
 @media only screen and (min-width: 600px) {
