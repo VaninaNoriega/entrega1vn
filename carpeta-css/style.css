@@ -172,8 +172,13 @@ p.Conta {
 }
 
 .Pre-frec {
-  background-color: rgba(244, 219, 187, 0.767);
+  background-color: rgba(186, 185, 183, 0.767);
   width: 100%;
+}
+
+.text-center {
+  height: 100%;
+  padding-left: 5%;
 }
 
 .contacto {
